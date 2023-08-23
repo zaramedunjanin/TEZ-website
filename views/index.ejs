@@ -1,0 +1,46 @@
+<head>
+  <title><%= title %></title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col text-center">
+        <h1 id="title" style="font-size: 18vw;">TEZ<span id="dotba"><span style="color: #2BA0E0FF">.</span>ba</span></h1>
+        <h3 id="subtitle">TICKETS <span style="color: #2BA0E0;">+</span> EVENTS <span style="color: #2BA0E0;">=</span>
+          <span style="color: #E0912A">ZABAVA</span></h3>
+      </div>
+    </div>
+    <div class="row mt-5">
+        <div class="container landing">
+
+          <p style="font-size: 20px" class="mx-5 text-center">
+            Dobrodošli na TEZ.ba, platformu stvorenu za ljude koji žele kupiti karte za sportske i muzičke događaje.
+            TEZ omogućava korisnicima da na jednom mjestu pronađu sve događaje. Platforma pruža
+            sve informacije o cijeni, datumu i lokaciji događaja širom cijele Bosne i Hercegovine,
+            kao i mogućnost preuzimanja karata online.
+          </p>
+      </div>
+    </div>
+
+    <div class="container events">
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+      <%for(let i = 0; i < events.length; i++){ %>
+      <div class="col">
+        <a href="/events/<%=events[i].id%>" class="card-link">
+          <div class="custom-card">
+            <img src="<%=events[i].slika%>" class="card-img-top" alt="Slika">
+            <div class="card-body">
+              <h5 class="card-title" style="display:inline;"><%=events[i].naziv%> @<h6 style="display:inline;"><%=events[i].naziv_institucije%></h6></h5>
+              <h6><%=events[i].datum.toLocaleDateString()%>, <%=events[i].datum.toLocaleTimeString()%></h6>
+              <p class="card-text"><%=events[i].opis.slice(0,100)%>...%></p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <%}%>
+    </div>
+  </div>
+  </div>
+
+</body>

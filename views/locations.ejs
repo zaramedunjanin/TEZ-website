@@ -1,0 +1,19 @@
+<div class="container events">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <%for(let i = 0; i < locations.length; i++){%>
+        <div class="col">
+            <a href="/locations/<%=locations[i].id%>" class="card-link">
+                <div class="custom-card">
+                    <img src="<%=locations[i].slika%>" class="card-img-top" alt="Slika">
+                    <div class="card-body">
+                        <h5 class="card-title"><%=locations[i].naziv%></h5>
+                        <h6 class="card-title"><%=locations[i].adresa%></h6>
+
+                        <p class="card-text"><%=locations[i].opis.slice(0,100)%>...</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <%}%>
+    </div>
+</div>

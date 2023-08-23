@@ -1,0 +1,26 @@
+<head>
+  <title><%= title %></title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="block" style="width: 500px">
+        <h2>Napravi Nalog</h2>
+        <h5 class="text-center" id="postoji_email" style="color: red; display: none;">NALOG SA UNESENIM MAILOM VEĆ POSTOJI</h5>
+        <h5 class="text-center" id="ne_postoji_lokacija" style="color: red; display: none;">UNESENA LOKACIJA NE POSTOJI</h5>
+        <form class="justify-content-center align-items-center" id="register" method="post" action="/register">
+          <div class="row">
+            <input id="ime" name="ime" class="col form-control rounded-pill m-2" type="text" placeholder="Ime" required>
+            <input id="prezime" name="prezime" class="col form-control rounded-pill m-2" type="text" placeholder="Prezime" required>
+          </div>
+          <input id="email" name="email" class="form-control rounded-pill my-2" type="email" placeholder="Email" required>
+          <input id="password" name="password" class="form-control rounded-pill my-2" type="password" placeholder="Password" required>
+          <input id="naziv_lokacije" name="naziv_lokacije" class="form-control rounded-pill my-2" type="text" placeholder="Naziv Lokacije (Admin Nalog)">
+          <button type="submit" class="btn rounded-pill custom-btn my-2">Register</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <script src="javascripts/registration.js"></script>
+</body>

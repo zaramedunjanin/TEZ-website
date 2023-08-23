@@ -1,0 +1,40 @@
+<div class="container events">
+    <div class="row event-card">
+        <h1 class="event-title"><%=location.naziv%> </h1>
+        <div class="col-md-6">
+            <img src="<%=location.slika%>" class="card-img-top event-img" alt="Slika">
+        </div>
+
+        <div class="col-md-6">
+            <div class="card-body">
+                <p class="location-text">Adresa: <%=location.adresa%></p>
+                <p class="location-text">Broj telefona: <%=location.broj_telefona%></p>
+
+                <p class="location-text"><%=location.opis%></p>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container events">
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <%for(let i = 0; i < events.length; i++){ %>
+        <div class="col">
+            <a href="/events/<%=events[i].id%>" class="card-link">
+                <div class="custom-card">
+                    <img src="<%=events[i].slika%>" class="card-img-top" alt="Slika">
+                    <div class="card-body">
+                        <h5 class="card-title" style="display:inline;"><%=events[i].naziv%> @<h6 style="display:inline;"><%=events[i].naziv_institucije%></h6></h5>
+                        <h6><%=events[i].datum.toLocaleDateString()%>, <%=events[i].datum.toLocaleTimeString()%></h6>
+                        <p class="card-text"><%=events[i].opis.slice(0,100)%>...%></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <%}%>
+    </div>
+    </div>
+
+</div>
+</div>

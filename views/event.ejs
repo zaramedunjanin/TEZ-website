@@ -1,0 +1,18 @@
+<div class="container events">
+    <div class="row event-card">
+        <h1 class="event-title"><%=event.naziv%> </h1>
+        <div class="col-md-6">
+            <img src="<%=event.slika%>" class="card-img-top event-img" alt="Slika">
+        </div>
+
+        <div class="col-md-6">
+            <div class="card-body">
+                <p class="location-text"><%=event.datum.toLocaleDateString()%>,<%=event.datum.toLocaleTimeString()%></p>
+
+                <p class="location-text"><%=event.opis%></p>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>

@@ -1,0 +1,23 @@
+<head>
+  <title><%= title %></title>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="block" style="width: 500px">
+      <h2>Log In </h2>
+      <% if (messages.error) { console.log(messages.error);%> <!-- Gleda da li je error prosljedjen -->
+      <div class="alert alert-danger alert-dismissible fade show" role="alert" id="taken">
+        <h5 class="text-center" id="postoji_email" style="color: red;"><%= messages.error %></h5>
+      </div>
+      <%}%>
+      <form class="justify-content-center align-items-center" method="post" action="/login">
+        <input id="email" name="email" class="form-control rounded-pill my-2" type="email" placeholder="Email" required>
+        <input id="password" name="password" class="form-control rounded-pill my-2" type="password" placeholder="Password" required>
+        <button type="submit" class="btn rounded-pill custom-btn my-2">Log In</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+</body>

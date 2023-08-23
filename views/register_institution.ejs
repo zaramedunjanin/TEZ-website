@@ -1,0 +1,22 @@
+<head>
+  <title><%= title %></title>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="block" style="width: 500px">
+      <h2>Prijavi Instituciju</h2>
+      <form id="regI" class="justify-content-center align-items-center" method="post" action="/">
+        <input id="naziv" name="naziv" class="form-control rounded-pill my-2" type="text" placeholder="Naziv" required>
+        <input id="adresa" name="adresa" class="form-control rounded-pill my-2" type="text" placeholder="Adresa" required>
+        <input id="broj_tel" name="broj_tel" class="form-control rounded-pill my-2" type="text" placeholder="Broj Telefona" required>
+        <input id="slika" name="slika" class="form-control rounded-pill my-2" type="file" placeholder="Slika" required>
+        <textarea id="opis" name="opis" class="form-control rounded my-2" placeholder="Opis Institucije" required></textarea>
+        <button type="submit" class="btn rounded-pill custom-btn my-2">Prijavi Instituciju</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+<script src="javascripts/institution_registration.js"></script>
+</body>

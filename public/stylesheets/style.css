@@ -1,0 +1,152 @@
+.block {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #E0912A;
+    border-width: 1px;
+    margin: 10px;
+}
+
+body{
+    font-family: 'Lexend', sans-serif;
+    background-color: floralwhite;
+    color: #373737;
+}
+
+p {
+    color: #373737;
+}
+a {
+    color: #2BA0E0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #005F94;
+}
+
+#title {
+    font-family: 'Monoton', cursive;
+    color: #005F94;
+}
+
+.title {
+    font-family: 'Monoton', cursive;
+    color: #005F94;
+    font-size: xx-large;
+}
+
+#title span {
+    font-family: 'Monoton', cursive;
+    color: #E0912A;
+}
+
+#subtitle {
+    font-family: 'Staatliches', cursive;
+    color: #005F94;
+}
+.navbar{
+    /*background-color: #FFB14A;*/
+    border-bottom: 1px solid #FFB14AFF;
+
+}
+.nav-link, .nav-link:visited .nav-link:focus,  .nav-link:active{
+    color: #FFB14A !important;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: #E0912A !important;
+
+}
+
+.buttons{
+    display: inline;
+}
+
+.custom-btn {
+    background-color: #2BA0E0;
+    border: none;
+    margin: 10px;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+}
+.custom-btn:hover {
+    background-color: #005F94;
+    color: white;
+}
+
+
+@media only screen and (max-width: 580px) {
+    .hide {
+        display: none;
+    }
+}
+
+.events{
+    margin-top: 5%;
+}
+.event-card{
+    border: 1px solid #E0912A;
+    border-radius: 10px;
+    padding: 4%;
+    background-color: white;
+    word-wrap: break-word;
+}
+
+.add-link{
+    font-size: 20px;
+    background-color: #FFB14A;
+    border: none;
+    margin: 10px;
+    border-radius: 30px;
+    color: white;
+}
+.add-container{
+    float: right;
+    align-content: center;
+}
+
+.custom-card{
+    border: 1px solid #E0912A;
+    border-radius: 10px;
+    padding: 5%;
+    height: 100%;
+    background-color: white;
+    word-wrap: break-word;
+}
+
+
+.custom-card:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px 3px #E0912A70;
+}
+
+.card-text{
+    font-size: 15px;
+}
+.location-text{
+    font-size: 20px;
+}
+
+.card-body{
+    padding-top: 3%;
+
+}
+
+.card-link,.card-link:hover,.card-link:visited, .card-link:focus{
+    text-decoration: none;
+    color: black;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    margin-top: auto;
+}
+.landing{
+
+}
