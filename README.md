@@ -18,5 +18,5 @@ The website has two types of users, with different capabilities:
 
 ## Note
 
-This website was a group project for an university exam.
+This website was a group project for a university exam.
 Other contributors are: Emin Mulaimović and Tarik Ajanović
